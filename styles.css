@@ -119,7 +119,7 @@ body {
 
 .file-open-container{
   background-color: #252526;
-  width: 100vw;
+  
   display: flex;
   justify-content: flex-start;
   font-size: 14px;
@@ -161,18 +161,32 @@ body {
 .text-content{
   font-size: 20px;
   font-weight: 520;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  padding: 30px;
   
 }
 
+.Heading{
+  font-size:45px;
+}
+
 .syntax-name{
+  /* For heading and higlight */
   color: #2f7dd8;
+
 }
 
 .method-name{
+  /* subtitle */
   color: #dcdcaa;
 
 }
 .string{
+  /* paragraph */
   color: #ce9178;
 
 }
