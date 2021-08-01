@@ -4,7 +4,7 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: #1e1e1e;
   color: white;
-  /* overflow: hidden; */
+  overflow-x: auto;
 
 }
 
@@ -22,7 +22,6 @@ body {
   display: flex;
   color: white;
   flex-direction: column;
-  overflow-y: hidden;
 }
 
 .first-icon-set {
@@ -76,7 +75,7 @@ body {
 
 }
 .fas,
-.far {
+.far,.fab {
   cursor: pointer;
 }
 
@@ -94,15 +93,11 @@ body {
 .body{
   background-color: #1e1e1e;
   flex:1;
-  overflow:auto;
   height: 100vh;
   margin-left: 70px;
-  scrollbar-color: #6969dd #e0e0e0;
+  scrollbar-color: dark;
 
 
-}
-.body::-webkit-scrollbar {
-  width: 700px;
 }
 
 .line{
@@ -112,14 +107,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
-
-
 .file-open-container{
-  background-color: #252526;
-  
   display: flex;
   justify-content: flex-start;
   font-size: 14px;
@@ -134,6 +124,8 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #1e1e1e;
+ 
+  
  
 }
 
@@ -161,17 +153,19 @@ body {
 .text-content{
   font-size: 20px;
   font-weight: 520;
+  background-color: #252526;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 100vw;
+  width: 100%;
   padding: 30px;
+  gap: 15px;
   
 }
 
 .Heading{
   font-size:45px;
+  margin-bottom: 10px;
 }
 
 .syntax-name{
@@ -189,4 +183,32 @@ body {
   /* paragraph */
   color: #ce9178;
 
+}
+
+
+
+/* src: https://www.w3schools.com/css/css_tooltip.asp */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #252526;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 7px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
